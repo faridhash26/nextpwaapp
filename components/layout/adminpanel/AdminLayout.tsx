@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { FC } from "react";
 
-const AdminLayout = () => {
-  return (
-    <div>AdminLayout</div>
-  )
+import Header from "./Header";
+import SideBar from "./SideBar";
+
+interface AdminLayoutProps {
+  children: React.ReactNode;
 }
+const AdminLayout: FC<AdminLayoutProps> = ({ children }) => {
+  return (
+    <>
+      <Header />
+      <SideBar />
+      {children}
+    </>
+  );
+};
 
-export default AdminLayout
+export default AdminLayout;
