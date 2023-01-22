@@ -8,11 +8,14 @@ interface AdminLayoutProps {
 }
 const AdminLayout: FC<AdminLayoutProps> = ({ children }) => {
   return (
-    <>
-      <Header />
+    <div className="flex w-full h-full">
+      <div className="flex flex-col w-full h-full">
+        <Header />
+
+        {children}
+      </div>
       <SideBar />
-      {children}
-    </>
+    </div>
   );
 };
 
