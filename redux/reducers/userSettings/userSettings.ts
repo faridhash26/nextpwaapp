@@ -4,6 +4,7 @@ import { UserSettingModel } from "./userSetting.model";
 
 const initialState: UserSettingModel = {
   isDarkMode: false,
+  lang:"fa"
 };
 
 const useSettingsRducer = createSlice({

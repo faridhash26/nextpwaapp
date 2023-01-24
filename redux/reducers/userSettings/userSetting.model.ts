@@ -1,3 +1,4 @@
 export interface UserSettingModel {
-    isDarkMode:boolean
+  isDarkMode: boolean;
+  lang: "en" | "fa";
 }
