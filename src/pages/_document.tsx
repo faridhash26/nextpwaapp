@@ -26,7 +26,7 @@ class MyDocument extends Document {
           <meta property="og:description" content="Best PWA App in the world" />
           <meta property="og:site_name" content="PWA App" />
         </Head>
-        <body className="dark:bg-gray-800">
+        <body className="dark:bg-maindark">
           <Main />
           <NextScript />
         </body>
