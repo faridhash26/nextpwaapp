@@ -16,10 +16,12 @@ type AppPropsWithLayout = AppProps & {
 const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
   const getLayout = Component.getLayout ?? ((page) => page);
 
-  return getLayout(
-    <Provider store={store}>
-      <Component {...pageProps} />
-    </Provider>
+  return (
+    <>
+      <Provider store={store}>
+        {getLayout(<Component {...pageProps} />)}
+      </Provider>
+    </>
   );
 };
 export default MyApp;

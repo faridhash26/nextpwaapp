@@ -12,8 +12,11 @@ interface AdminLayoutProps {
   userSettings: UserSettings;
 }
 const AdminLayout: FC<AdminLayoutProps> = ({ children }) => {
+  const { isDarkMode } = useSelector((state: any) => state.userSettings);
+
   return (
-    <div className="dark flex w-full h-full dark:bg-maindark">
+    // <div className={`${isDarkMode? "light": "dark"} flex w-full h-full dark:bg-maindark`}>
+    <div className={`$ dark flex w-full h-full dark:bg-maindark`}>
       <SideBarInfo />
       <div className="flex flex-col w-full h-full">
         <Header />

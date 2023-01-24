@@ -11,6 +11,5 @@ const AdminPage = () => {
 
 export default AdminPage;
 AdminPage.getLayout = function getLayout(page: ReactElement) {
-
   return <AdminLayout userSettings>{page}</AdminLayout>;
 };

@@ -5,7 +5,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between p-4">
+    <header className="flex items-center justify-between p-4 dark:bg-darker">
       <div className="flex items-center space-x-4 md:space-x-0">
         <button className="p-1 text-indigo-400 transition-colors duration-200 rounded-md bg-indigo-50  hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:ring">
           <span className="sr-only">Open main manu</span>
