@@ -17,12 +17,12 @@ const AdminLayout: FC<AdminLayoutProps> = ({ children }) => {
   return (
     // <div className={`${isDarkMode? "light": "dark"} flex w-full h-full dark:bg-maindark`}>
     <div className={`$ dark flex w-full h-full dark:bg-maindark`}>
-      <SideBarInfo />
+      <SideBar />
       <div className="flex flex-col w-full h-full">
         <Header />
         {children}
       </div>
-      <SideBar />
+      <SideBarInfo />
     </div>
   );
 };
