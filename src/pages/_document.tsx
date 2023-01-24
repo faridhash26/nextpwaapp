@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html className="dark">
         <Head>
           <link rel="manifest" href="/manifest.json" />
           <meta name="theme-color" content="#fff" />
@@ -26,7 +26,7 @@ class MyDocument extends Document {
           <meta property="og:description" content="Best PWA App in the world" />
           <meta property="og:site_name" content="PWA App" />
         </Head>
-        <body>
+        <body className="dark:bg-gray-800">
           <Main />
           <NextScript />
         </body>

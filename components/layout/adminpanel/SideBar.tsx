@@ -7,8 +7,8 @@ import { HiOutlineLogout } from "react-icons/hi";
 
 const SideBar = () => {
   return (
-    <aside className="fixed inset-y-0 z-10 flex flex-shrink-0 bg-white border-r md:static dark:border-indigo-800 dark:bg-darker focus:outline-none">
-      <nav className="flex flex-col flex-shrink-0 h-full px-2 py-4 border-r dark:border-indigo-800">
+    <aside className="fixed inset-y-0 z-10 flex flex-shrink-0 bg-white dark:bg-black border-l md:static dark:border-indigo-800 dark:bg-darker focus:outline-none">
+      <nav className="flex flex-col flex-shrink-0 h-full px-2 py-4 border-l dark:border-indigo-800">
         <div className="flex-shrink-0">
           <Link
             href="https://kamona-wd.github.io/kwd-dashboard/"
