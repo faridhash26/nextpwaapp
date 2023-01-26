@@ -5,7 +5,8 @@ const SearchPanel = () => {
     <section className="fixed inset-y-0 z-20 w-full max-w-xs bg-white shadow-xl dark:bg-darker dark:text-light sm:max-w-md focus:outline-none">
       <div className="absolute right-0 p-2 transform translate-x-full">
         <button className="p-2 text-white rounded-md focus:outline-none focus:ring">
-          <svg
+          sdfsd
+          {/* <svg
             className="w-5 h-5"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -18,7 +19,7 @@ const SearchPanel = () => {
               stroke-width="2"
               d="M6 18L18 6M6 6l12 12"
             />
-          </svg>
+          </svg> */}
         </button>
       </div>
 
@@ -27,20 +28,7 @@ const SearchPanel = () => {
       <div className="flex flex-col h-screen">
         <div className="relative flex-shrink-0 px-4 py-8 text-gray-400 border-b dark:border-indigo-800 dark:focus-within:text-light focus-within:text-gray-700">
           <span className="absolute inset-y-0 inline-flex items-center px-4">
-            <svg
-              className="w-5 h-5"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
+      
           </span>
           <input
             x-ref="searchInput"
