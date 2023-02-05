@@ -34,7 +34,7 @@ const SideBarInfo: FC<SideBarInfoProps> = ({
       <div className="flex flex-col h-screen">
         <div className="flex-shrink-0 p-4">
           <button
-            className="neomorfism p-2 text-indigo-400 transition-colors duration-200 rounded-full bg-indigo-50 hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800"
+            className="shadow-light-morfism dark:shadow-dark-morfism p-2 text-indigo-400 transition-colors duration-200 rounded-full bg-indigo-50 hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800"
             onClick={() => setiseSettingOpen(!iseSettingOpen)}
           >
             <span className="sr-only">Open settings panel</span>

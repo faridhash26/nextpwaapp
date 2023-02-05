@@ -11,7 +11,7 @@ interface SideBarProps {
 }
 const SideBar: FC<SideBarProps> = () => {
   return (
-    <aside className="fixed inset-y-0 z-10 flex flex-shrink-0 bg-white  border-x md:static dark:border-indigo-800 dark:bg-darker focus:outline-none">
+    <aside className="fixed  inset-y-0 z-10 flex flex-shrink-0 bg-white  border-x md:static dark:border-indigo-800 dark:bg-darker focus:outline-none">
       <nav className="flex flex-col flex-shrink-0 h-full px-2 py-4 border-r dark:border-indigo-800">
         <div className="flex-shrink-0">
           <Link
@@ -24,7 +24,7 @@ const SideBar: FC<SideBarProps> = () => {
         <div className="flex flex-col items-center justify-center flex-1 space-y-4">
           <Link
             href="#"
-            className="neomorfism p-2 text-white transition-colors duration-200 bg-indigo-600 rounded-full hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800"
+            className="shadow-light-morfism dark:shadow-dark-morfism p-2 text-white transition-colors duration-200 bg-indigo-600 rounded-full hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800"
           >
             <span className="sr-only">Home</span>
             <AiOutlineHome size={25} />
@@ -32,7 +32,7 @@ const SideBar: FC<SideBarProps> = () => {
 
           <Link
             href="#"
-            className="neomorfism p-2 text-indigo-400 transition-colors duration-200 rounded-full bg-indigo-50 hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800"
+            className="shadow-light-morfism dark:shadow-dark-morfism p-2 text-indigo-400 transition-colors duration-200 rounded-full bg-indigo-50 hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800"
           >
             <span className="sr-only">Messages</span>
             <AiOutlineMessage size={25} />
@@ -40,7 +40,7 @@ const SideBar: FC<SideBarProps> = () => {
 
           <Link
             href="#"
-            className="neomorfism p-2 text-indigo-400 transition-colors duration-200 rounded-full bg-indigo-50 hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800"
+            className="shadow-light-morfism dark:shadow-dark-morfism p-2 text-indigo-400 transition-colors duration-200 rounded-full bg-indigo-50 hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800"
           >
             <span className="sr-only">Another Link</span>
             <RiDashboardLine size={25} />
@@ -48,7 +48,7 @@ const SideBar: FC<SideBarProps> = () => {
 
           <Link
             href="#"
-            className="neomorfism p-2 text-indigo-400 transition-colors duration-200 rounded-full bg-indigo-50 hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800"
+            className="shadow-light-morfism dark:shadow-dark-morfism p-2 text-indigo-400 transition-colors duration-200 rounded-full bg-indigo-50 hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800"
           >
             <span className="sr-only">Users</span>
             <TbUsers size={25} />
@@ -59,7 +59,7 @@ const SideBar: FC<SideBarProps> = () => {
           action="#"
           className="flex items-center justify-center flex-shrink-0"
         >
-          <button className="neomorfism p-2 text-indigo-400 transition-colors duration-200 rounded-full bg-indigo-50 hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800">
+          <button className="shadow-light-morfism dark:shadow-dark-morfism p-2 text-indigo-400 transition-colors duration-200 rounded-full bg-indigo-50 hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800">
             <span className="sr-only">Logout</span>
             <HiOutlineLogout size={25} />
           </button>
