@@ -115,3 +115,6 @@ a {
   width: 100%;
   height: 100%;
 }
+.neomorfism {
+  box-shadow: 5px 5px 10px #0b1827, -5px -5px 10px #173657;
+}

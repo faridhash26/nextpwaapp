@@ -3,7 +3,7 @@ import { AiOutlineSetting } from "react-icons/ai";
 
 const SideBarInfo = () => {
   return (
-    <section className="fixed inset-y-0 top-0 right-0 z-10 flex-shrink-0 bg-white xl:z-0 xl:sticky w-80 dark:bg-darker dark:text-light xl:border-l dark:border-indigo-800 focus:outline-none">
+    <section className="fixed inset-y-0 top-0 right-0 z-10 flex-shrink-0 bg-white xl:z-0 xl:sticky w-80 dark:bg-darker dark:text-light xl:border-x dark:border-indigo-800 focus:outline-none">
       <h2 className="sr-only">User panel</h2>
 
       <div className="absolute left-0 p-2 transform -translate-x-full xl:hidden">
@@ -39,7 +39,7 @@ const SideBarInfo = () => {
               alt="Ahmed Kamel"
             />
             <h2 className="text-xl font-medium text-gray-600 dark:text-light">
-              Ahmed Kamel
+              Farid Hash
             </h2>
           </div>
           <div className="space-y-6">
@@ -56,7 +56,7 @@ const SideBarInfo = () => {
               <a href="#" className="flex items-start space-x-2 group">
                 <img
                   className="flex-shrink-0 object-cover w-12 h-12 rounded-full"
-                  src="https://scontent-hbe1-1.xx.fbcdn.net/v/t1.0-9/82125466_110587420467089_5876443407655632896_n.jpg?_nc_cat=102&ccb=3&_nc_sid=09cbfe&_nc_ohc=GrzMqB3w0WMAX_PK3hf&_nc_ht=scontent-hbe1-1.xx&oh=a51c1ffff60c83e73c3ef0c9c70afafa&oe=6056CFF5"
+                  src="https://avatars.githubusercontent.com/u/57622665?s=460&u=8f581f4c4acd4c18c33a87b3e6476112325e8b38&v=4"
                   alt="John Doe"
                 />
                 <div className="overflow-hidden">
@@ -75,7 +75,7 @@ const SideBarInfo = () => {
               <a href="#" className="flex items-start space-x-2 group">
                 <img
                   className="flex-shrink-0 object-cover w-12 h-12 rounded-full"
-                  src="https://pbs.twimg.com/profile_banners/1320412502195306496/1603647296/1500x500"
+                  src="https://avatars.githubusercontent.com/u/57622665?s=460&u=8f581f4c4acd4c18c33a87b3e6476112325e8b38&v=4"
                   alt="John Doe"
                 />
                 <div className="overflow-hidden">
@@ -112,7 +112,7 @@ const SideBarInfo = () => {
               target="_blank"
               className="text-blue-500 hover:underline"
             >
-              Ahmed Kamel
+              Farid Hash
             </a>
           </div>
         </footer>
