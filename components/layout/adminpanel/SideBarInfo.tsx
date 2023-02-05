@@ -1,14 +1,20 @@
-import React from "react";
-import { AiOutlineSetting } from "react-icons/ai";
-
-const SideBarInfo = () => {
+import React, { FC } from "react";
+import { AiOutlineCloseCircle, AiOutlineSetting } from "react-icons/ai";
+interface SideBarInfoProps {
+  iseSettingOpen: boolean;
+  setiseSettingOpen: (isOpen: boolean) => void;
+}
+const SideBarInfo: FC<SideBarInfoProps> = ({
+  iseSettingOpen,
+  setiseSettingOpen,
+}) => {
   return (
     <section className="fixed inset-y-0 top-0 right-0 z-10 flex-shrink-0 bg-white xl:z-0 xl:sticky w-80 dark:bg-darker dark:text-light xl:border-x dark:border-indigo-800 focus:outline-none">
       <h2 className="sr-only">User panel</h2>
 
       <div className="absolute left-0 p-2 transform -translate-x-full xl:hidden">
         <button className="p-2 rounded-md text-dark dark:text-light focus:outline-none focus:ring">
-          <svg
+          {/* <svg
             className="w-5 h-5"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -21,12 +27,16 @@ const SideBarInfo = () => {
               stroke-width="2"
               d="M6 18L18 6M6 6l12 12"
             />
-          </svg>
+          </svg> */}
+          <AiOutlineCloseCircle />
         </button>
       </div>
       <div className="flex flex-col h-screen">
         <div className="flex-shrink-0 p-4">
-          <button className="p-2 text-indigo-400 transition-colors duration-200 rounded-full bg-indigo-50 hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800">
+          <button
+            className="neomorfism p-2 text-indigo-400 transition-colors duration-200 rounded-full bg-indigo-50 hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800"
+            onClick={() => setiseSettingOpen(!iseSettingOpen)}
+          >
             <span className="sr-only">Open settings panel</span>
             <AiOutlineSetting size={25} />
           </button>

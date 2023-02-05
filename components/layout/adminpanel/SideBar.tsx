@@ -1,11 +1,15 @@
-import React from "react";
+import React, { FC } from "react";
 import Link from "next/link";
 import { AiOutlineHome, AiOutlineMessage } from "react-icons/ai";
 import { RiDashboardLine } from "react-icons/ri";
 import { TbUsers } from "react-icons/tb";
 import { HiOutlineLogout } from "react-icons/hi";
 
-const SideBar = () => {
+interface SideBarProps {
+  isSideOpen: boolean;
+  setisSideOpen: (isOpen: boolean) => void;
+}
+const SideBar: FC<SideBarProps> = () => {
   return (
     <aside className="fixed inset-y-0 z-10 flex flex-shrink-0 bg-white  border-x md:static dark:border-indigo-800 dark:bg-darker focus:outline-none">
       <nav className="flex flex-col flex-shrink-0 h-full px-2 py-4 border-r dark:border-indigo-800">

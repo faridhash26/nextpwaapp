@@ -118,3 +118,32 @@ a {
 .neomorfism {
   box-shadow: 5px 5px 10px #0b1827, -5px -5px 10px #173657;
 }
+
+.sideOpen {
+  animation: showpanel 0.2s forwards;
+  visibility: visible;
+  transition: visibility 0.2s, opacity 0.2s linear;
+}
+
+.sideClose {
+  animation: closepanel 0.2s forwards;
+  visibility: hidden;
+  transition: visibility 0.2s, opacity 0.2s linear;
+}
+
+@keyframes showpanel {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes closepanel {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
