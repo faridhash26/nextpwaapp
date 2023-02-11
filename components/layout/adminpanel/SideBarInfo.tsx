@@ -15,8 +15,10 @@ const SideBarInfo: FC<SideBarInfoProps> = ({
   return (
     <section
       className={`${
-        isInfoSideOpen ? "sideOpen w-80" : "sideclose w-20"
-      } fixed inset-y-0 top-0 right-0 z-10 flex-shrink-0 bg-white xl:z-0 xl:sticky  dark:bg-darker dark:text-light xl:border-x dark:border-indigo-800 focus:outline-none`}
+        isInfoSideOpen
+          ? "sideOpen xl:w-80 lg:w-80"
+          : "sideclose lg:w-20 xl:w-20"
+      }  w-full fixed inset-y-0 top-0 right-0 z-10 flex-shrink-0 bg-white xl:z-0 xl:sticky  dark:bg-darker dark:text-light xl:border-x dark:border-indigo-800 focus:outline-none`}
     >
       <h2 className="sr-only">User panel</h2>
 
@@ -26,14 +28,25 @@ const SideBarInfo: FC<SideBarInfoProps> = ({
         </button>
       </div> */}
       <div className="flex flex-col h-screen">
-        <div className="flex-shrink-0 p-4">
-          <button
-            className="shadow-light-morfism dark:shadow-dark-morfism p-2 text-indigo-400 transition-colors duration-200 rounded-full bg-indigo-50 hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800"
-            onClick={() => setiseSettingOpen(!iseSettingOpen)}
-          >
-            <span className="sr-only">Open settings panel</span>
-            <AiOutlineSetting size={25} />
-          </button>
+        <div className="flex w-full justify-center">
+          <div className="flex-shrink-0 p-4">
+            <button
+              className="shadow-light-morfism dark:shadow-dark-morfism p-2 text-indigo-400 transition-colors duration-200 rounded-full bg-indigo-50 hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800"
+              onClick={() => setiseSettingOpen(!iseSettingOpen)}
+            >
+              <span className="sr-only">Open settings panel</span>
+              <AiOutlineSetting size={25} />
+            </button>
+          </div>
+          <div className="flex-shrink-0 p-4 xl:hidden lg:hidden visible ">
+            <button
+              className="shadow-light-morfism dark:shadow-dark-morfism p-2 text-indigo-400 transition-colors duration-200 rounded-full bg-indigo-50 hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800"
+              onClick={() => setisInfoSideOpen(!isInfoSideOpen)}
+            >
+              <span className="sr-only">Open settings panel</span>
+              <AiOutlineCloseCircle size={25} />
+            </button>
+          </div>
         </div>
         <div className="flex-1 p-4 space-y-8 overflow-y-hidden hover:overflow-y-auto">
           <div
