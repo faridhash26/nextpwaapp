@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const withTM = require("next-transpile-modules")(["three"]);
+
 const withPWA = require("next-pwa")({
   dest: "public",
   register: true,
@@ -12,3 +14,4 @@ const nextConfig = withPWA({
 });
 
 module.exports = nextConfig;
+module.exports = withTM()
