@@ -15,6 +15,10 @@ module.exports = {
       darker: "#12263f",
       light: "#edf2f9",
     },
+    boxShadow: {
+      "dark-morfism": "5px 5px 10px #0b1827, -5px -5px 10px #173657;",
+      "light-morfism": "20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;",
+    },
     extend: {},
   },
   plugins: [],

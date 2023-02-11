@@ -3,7 +3,6 @@ import type { ReactElement } from "react";
 
 import AdminLayout from "components/layout/adminpanel/AdminLayout";
 
-
 const AdminPage = () => {
   return <div className="bg-red text-3xl font-bold underline">index</div>;
 };
