@@ -122,7 +122,7 @@ const SideBarInfo: FC<SideBarInfoProps> = ({
             View on
             <a
               href="https://github.com/Kamona-WD/kwd-dashboard"
-              target="_blank"
+              // target="_blank"
               className="text-blue-500 hover:underline"
             >
               github
@@ -132,7 +132,7 @@ const SideBarInfo: FC<SideBarInfoProps> = ({
             Made by
             <a
               href="https://github.com/Kamona-WD"
-              target="_blank"
+              // target="_blank"
               className="text-blue-500 hover:underline"
             >
               Farid Hash
