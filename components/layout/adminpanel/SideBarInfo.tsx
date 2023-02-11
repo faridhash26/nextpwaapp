@@ -121,7 +121,7 @@ const SideBarInfo: FC<SideBarInfoProps> = ({
           <div className="text-sm">
             View on
             <a
-              href="https://github.com/Kamona-WD/kwd-dashboard"
+              href="#"
               // target="_blank"
               className="text-blue-500 hover:underline"
             >
@@ -131,7 +131,7 @@ const SideBarInfo: FC<SideBarInfoProps> = ({
           <div className="text-sm">
             Made by
             <a
-              href="https://github.com/Kamona-WD"
+              href="#"
               // target="_blank"
               className="text-blue-500 hover:underline"
             >

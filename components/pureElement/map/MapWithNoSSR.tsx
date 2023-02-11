@@ -6,7 +6,7 @@ const MapWrapper = dynamic(() => import("./MapWrapper"), {
 });
 const MapWithNoSSR = () => {
   return (
-    <div className="w-full h-full z-10" dir="ltr">
+    <div className="w-full h-full" dir="ltr">
       <MapWrapper />
     </div>
   );
