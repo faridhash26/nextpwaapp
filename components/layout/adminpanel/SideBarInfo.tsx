@@ -66,9 +66,9 @@ const SideBarInfo: FC<SideBarInfoProps> = ({
               <h3 className="text-lg font-normal text-gray-600 dark:text-light">
                 Messages
               </h3>
-              {/* <a href="#" className="text-blue-500 hover:underline">
+              <a href="#" className="text-blue-500 hover:underline">
                 View all
-              </a> */}
+              </a>
             </div>
 
             {/* <div className="space-y-4">
@@ -77,7 +77,7 @@ const SideBarInfo: FC<SideBarInfoProps> = ({
                   className="flex-shrink-0 object-cover w-12 h-12 rounded-full"
                   src="https://avatars.githubusercontent.com/u/57622665?s=460&u=8f581f4c4acd4c18c33a87b3e6476112325e8b38&v=4"
                   alt="John Doe"
-                /> */}
+                />
                 <div className="overflow-hidden">
                   <h4 className="font-semibold text-gray-400 transition-colors dark:text-indigo-700 group-hover:text-gray-900 dark:group-hover:text-indigo-400">
                     John Doe
@@ -90,13 +90,13 @@ const SideBarInfo: FC<SideBarInfoProps> = ({
                 <span className="text-xs text-gray-500 whitespace-nowrap dark:text-indigo-500">
                   1h ago
                 </span>
-              {/* </a> */}
-              {/* <a href="#" className="flex items-start space-x-2 group"> */}
-                {/* <img
+              </a>
+              <a href="#" className="flex items-start space-x-2 group">
+                <img
                   className="flex-shrink-0 object-cover w-12 h-12 rounded-full"
                   src="https://avatars.githubusercontent.com/u/57622665?s=460&u=8f581f4c4acd4c18c33a87b3e6476112325e8b38&v=4"
                   alt="John Doe"
-                /> */}
+                />
                 <div className="overflow-hidden">
                   <h4 className="font-semibold text-gray-400 transition-colors dark:text-indigo-700 group-hover:text-gray-900 dark:group-hover:text-indigo-400">
                     Someone
@@ -120,17 +120,17 @@ const SideBarInfo: FC<SideBarInfoProps> = ({
         >
           <div className="text-sm">
             View on
-            {/* <a
+            <a
               href="https://github.com/Kamona-WD/kwd-dashboard"
               target="_blank"
               className="text-blue-500 hover:underline"
             >
               github
-            </a> */}
+            </a>
           </div>
           <div className="text-sm">
             Made by
-            {/* <a
+            <a
               href="https://github.com/Kamona-WD"
               target="_blank"
               className="text-blue-500 hover:underline"
