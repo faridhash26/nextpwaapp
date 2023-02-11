@@ -1,3 +1,4 @@
+import { Localization } from "config/localization/localization";
 import React, { FC } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { CiLight, CiDark } from "react-icons/ci";
@@ -44,14 +45,14 @@ const Settings: FC<SettingsProps> = ({ iseSettingOpen, setiseSettingOpen }) => {
             id="settinsPanelLabel"
             className="text-xl font-medium text-gray-500 dark:text-light"
           >
-            تنظیمات
+            {Localization.settings}
           </h2>
         </div>
 
         <div className="flex-1 overflow-hidden hover:overflow-y-auto">
           <div className="p-4 space-y-4 md:p-8">
             <h6 className="text-lg font-medium text-gray-400 dark:text-light">
-              حالت تم
+              {Localization.temType}
             </h6>
             <div className="flex items-center space-x-8">
               <button
@@ -65,7 +66,7 @@ const Settings: FC<SettingsProps> = ({ iseSettingOpen, setiseSettingOpen }) => {
                 <span>
                   <CiLight size={25} />
                 </span>
-                <span>روشن</span>
+                <span>{Localization.light}</span>
               </button>
               <button
                 className={`${
@@ -78,14 +79,14 @@ const Settings: FC<SettingsProps> = ({ iseSettingOpen, setiseSettingOpen }) => {
                 <span>
                   <CiDark size={25} />
                 </span>
-                <span>تاریک</span>
+                <span>{Localization.dark}</span>
               </button>
             </div>
           </div>
 
           <div className="p-4 space-y-4 md:p-8">
             <h6 className="text-lg font-medium text-gray-400 dark:text-light">
-              زبان
+              {Localization.language}
             </h6>
           </div>
         </div>
