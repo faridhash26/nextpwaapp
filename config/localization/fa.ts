@@ -6,4 +6,5 @@ export const fa: I18 = {
   temType: "حالت تم",
   dark: "تاریک",
   language: "زبان",
+  Home: "خانه",
 };

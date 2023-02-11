@@ -119,13 +119,13 @@ a {
   box-shadow: 5px 5px 10px #0b1827, -5px -5px 10px #173657;
 }
 
-.sideOpen {
+.sideSettingOpen {
   animation: showpanel 0.2s forwards;
   visibility: visible;
   transition: visibility 0.2s, opacity 0.2s linear;
 }
 
-.sideClose {
+.sideSettingClose {
   animation: closepanel 0.2s forwards;
   visibility: hidden;
   transition: visibility 0.2s, opacity 0.2s linear;
@@ -145,5 +145,40 @@ a {
   }
   to {
     transform: translateX(100%);
+  }
+}
+
+.sideOpen {
+  transition: all 0.2s, opacity 0.2s linear;
+}
+.sideclose {
+  transition: all 0.2s, opacity 0.2s linear;
+}
+
+.show-element {
+  visibility: visible;
+  transition: visibility 0.5s, opacity 0.2s linear;
+  animation: ShowElementAnimation 1s forwards;
+}
+.hidden-element {
+  visibility: hidden;
+  transition: visibility 0.5s, opacity 0.2s linear;
+  animation: HiddenElementAnimation 0.2s forwards;
+}
+
+@keyframes ShowElementAnimation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes HiddenElementAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
   }
 }

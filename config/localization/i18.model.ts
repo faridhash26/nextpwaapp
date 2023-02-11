@@ -4,4 +4,5 @@ export interface I18 {
   temType: string;
   dark: string;
   language: string;
+  Home: string;
 }

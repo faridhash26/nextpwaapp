@@ -1,36 +1,30 @@
 import React, { FC } from "react";
 import { AiOutlineCloseCircle, AiOutlineSetting } from "react-icons/ai";
 interface SideBarInfoProps {
+  isInfoSideOpen: boolean;
   iseSettingOpen: boolean;
+  setisInfoSideOpen: (isOpen: boolean) => void;
   setiseSettingOpen: (isOpen: boolean) => void;
 }
 const SideBarInfo: FC<SideBarInfoProps> = ({
+  isInfoSideOpen,
   iseSettingOpen,
   setiseSettingOpen,
+  setisInfoSideOpen,
 }) => {
   return (
-    <section className="fixed inset-y-0 top-0 right-0 z-10 flex-shrink-0 bg-white xl:z-0 xl:sticky w-80 dark:bg-darker dark:text-light xl:border-x dark:border-indigo-800 focus:outline-none">
+    <section
+      className={`${
+        isInfoSideOpen ? "sideOpen w-80" : "sideclose w-20"
+      } fixed inset-y-0 top-0 right-0 z-10 flex-shrink-0 bg-white xl:z-0 xl:sticky  dark:bg-darker dark:text-light xl:border-x dark:border-indigo-800 focus:outline-none`}
+    >
       <h2 className="sr-only">User panel</h2>
 
-      <div className="absolute left-0 p-2 transform -translate-x-full xl:hidden">
+      {/* <div className="absolute right-0 p-2 transform -translate-x-full ">
         <button className="p-2 rounded-md text-dark dark:text-light focus:outline-none focus:ring">
-          {/* <svg
-            className="w-5 h-5"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg> */}
           <AiOutlineCloseCircle />
         </button>
-      </div>
+      </div> */}
       <div className="flex flex-col h-screen">
         <div className="flex-shrink-0 p-4">
           <button
@@ -42,18 +36,26 @@ const SideBarInfo: FC<SideBarInfoProps> = ({
           </button>
         </div>
         <div className="flex-1 p-4 space-y-8 overflow-y-hidden hover:overflow-y-auto">
-          <div className="flex flex-col items-center space-y-2">
+          <div
+            className={`${
+              isInfoSideOpen ? "show-element " : "hidden-element"
+            }  flex flex-col items-center space-y-2`}
+          >
             <img
               className="w-20 h-20 rounded-full dark:opacity-70"
               src="https://avatars.githubusercontent.com/u/57622665?s=460&u=8f581f4c4acd4c18c33a87b3e6476112325e8b38&v=4"
-              alt="Ahmed Kamel"
+              alt="farid hash"
             />
             <h2 className="text-xl font-medium text-gray-600 dark:text-light">
               Farid Hash
             </h2>
           </div>
           <div className="space-y-6">
-            <div className="flex items-center justify-between">
+            <div
+              className={`${
+                isInfoSideOpen ? "show-element " : "hidden-element"
+              }  flex items-center justify-between`}
+            >
               <h3 className="text-lg font-normal text-gray-600 dark:text-light">
                 Messages
               </h3>
@@ -62,7 +64,7 @@ const SideBarInfo: FC<SideBarInfoProps> = ({
               </a>
             </div>
 
-            <div className="space-y-4">
+            {/* <div className="space-y-4">
               <a href="#" className="flex items-start space-x-2 group">
                 <img
                   className="flex-shrink-0 object-cover w-12 h-12 rounded-full"
@@ -101,10 +103,14 @@ const SideBarInfo: FC<SideBarInfoProps> = ({
                   1h ago
                 </span>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
-        <footer className="flex items-center justify-between flex-shrink-0 px-4 py-2 border-t dark:border-indigo-800">
+        <footer
+          className={`${
+            isInfoSideOpen ? "show-element " : "hidden-element"
+          } flex items-center justify-between flex-shrink-0 px-4 py-2 border-t dark:border-indigo-800`}
+        >
           <div className="text-sm">
             View on
             <a

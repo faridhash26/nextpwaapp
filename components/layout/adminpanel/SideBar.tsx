@@ -1,32 +1,35 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import Link from "next/link";
-import { AiOutlineHome, AiOutlineMessage } from "react-icons/ai";
+import { AiOutlineHome, AiOutlineMenu, AiOutlineMessage } from "react-icons/ai";
 import { RiDashboardLine } from "react-icons/ri";
 import { TbUsers } from "react-icons/tb";
 import { HiOutlineLogout } from "react-icons/hi";
+import { Localization } from "config/localization/localization";
 
 interface SideBarProps {
   isSideOpen: boolean;
   setisSideOpen: (isOpen: boolean) => void;
 }
 const SideBar: FC<SideBarProps> = () => {
+  const [isSideOpen, setisSideOpen] = useState<boolean>(false);
+
   return (
     <aside className="fixed  inset-y-0 z-10 flex flex-shrink-0 bg-white  border-x md:static dark:border-indigo-800 dark:bg-darker focus:outline-none">
       <nav className="flex flex-col flex-shrink-0 h-full px-2 py-4 border-r dark:border-indigo-800">
         <div className="flex-shrink-0">
-          <Link
-            href="https://github.com/faridhash26/front-9804"
-            className="inline-block text-xl font-bold tracking-wider text-indigo-700 uppercase dark:text-light"
+          <button
+            className="shadow-light-morfism dark:shadow-dark-morfism p-2 text-indigo-400 transition-colors duration-200 rounded-full bg-indigo-50 hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800"
+            onClick={() => setisSideOpen(!isSideOpen)}
           >
-            K-WD
-          </Link>
+            <AiOutlineMenu size={25} />
+          </button>
         </div>
         <div className="flex flex-col items-center justify-center flex-1 space-y-4">
           <Link
             href="#"
             className="shadow-light-morfism dark:shadow-dark-morfism p-2 text-white transition-colors duration-200 bg-indigo-600 rounded-full hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800"
           >
-            <span className="sr-only">Home</span>
+            <span className="sr-only">{Localization.Home}</span>
             <AiOutlineHome size={25} />
           </Link>
 

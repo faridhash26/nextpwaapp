@@ -21,7 +21,7 @@ const Settings: FC<SettingsProps> = ({ iseSettingOpen, setiseSettingOpen }) => {
   return (
     <section
       className={`${
-        iseSettingOpen ? "sideOpen " : "sideClose"
+        iseSettingOpen ? "sideSettingOpen " : "sideSettingClose"
       } fixed   inset-y-0 right-0 z-20 w-full max-w-xs bg-white shadow-xl dark:bg-darker dark:text-light sm:max-w-md focus:outline-none`}
     >
       <div className="absolute left-0 p-2 transform -translate-x-full">
