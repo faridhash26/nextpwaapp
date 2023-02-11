@@ -21,12 +21,6 @@ const SideBarInfo: FC<SideBarInfoProps> = ({
       }  w-full fixed inset-y-0 top-0 right-0 z-10 flex-shrink-0 bg-white xl:z-0 xl:sticky  dark:bg-darker dark:text-light xl:border-x dark:border-indigo-800 focus:outline-none`}
     >
       <h2 className="sr-only">User panel</h2>
-
-      {/* <div className="absolute right-0 p-2 transform -translate-x-full ">
-        <button className="p-2 rounded-md text-dark dark:text-light focus:outline-none focus:ring">
-          <AiOutlineCloseCircle />
-        </button>
-      </div> */}
       <div className="flex flex-col h-screen">
         <div className="flex w-full justify-center">
           <div className="flex-shrink-0 p-4">
