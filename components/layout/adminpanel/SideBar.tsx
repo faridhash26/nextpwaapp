@@ -1,9 +1,12 @@
 import React, { FC, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
+
 import { AiOutlineHome, AiOutlineMenu, AiOutlineMessage } from "react-icons/ai";
-import { RiDashboardLine } from "react-icons/ri";
+import { RiDashboardLine, RiRoadMapLine } from "react-icons/ri";
 import { TbUsers } from "react-icons/tb";
 import { HiOutlineLogout } from "react-icons/hi";
+
 import { Localization } from "config/localization/localization";
 
 interface SideBarProps {
@@ -11,6 +14,7 @@ interface SideBarProps {
   setisSideOpen: (isOpen: boolean) => void;
 }
 const SideBar: FC<SideBarProps> = () => {
+  const router = useRouter();
   const [isSideOpen, setisSideOpen] = useState<boolean>(false);
 
   return (
@@ -26,11 +30,27 @@ const SideBar: FC<SideBarProps> = () => {
         </div>
         <div className="flex flex-col items-center justify-center flex-1 space-y-4">
           <Link
-            href="#"
-            className="shadow-light-morfism dark:shadow-dark-morfism p-2 text-white transition-colors duration-200 bg-indigo-600 rounded-full hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800"
+            href="/adminPanel"
+            className={`${
+              router.pathname == "/adminPanel"
+                ? "text-white"
+                : "text-indigo-400"
+            } shadow-light-morfism dark:shadow-dark-morfism p-2  transition-colors duration-200 bg-indigo-600 rounded-full hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800`}
           >
             <span className="sr-only">{Localization.Home}</span>
             <AiOutlineHome size={25} />
+          </Link>
+
+          <Link
+            href="/adminPanel/navigation"
+            className={`${
+              router.pathname == "/adminPanel/navigation"
+                ? "text-white"
+                : "text-indigo-400"
+            } shadow-light-morfism dark:shadow-dark-morfism p-2  transition-colors duration-200 bg-indigo-600 rounded-full hover:text-indigo-600 hover:bg-indigo-100 dark:hover:text-light dark:hover:bg-indigo-700 dark:bg-maindark focus:outline-none focus:bg-indigo-100 dark:focus:bg-indigo-700 focus:ring-indigo-800`}
+          >
+            <span className="sr-only">Messages</span>
+            <RiRoadMapLine size={25} />
           </Link>
 
           <Link

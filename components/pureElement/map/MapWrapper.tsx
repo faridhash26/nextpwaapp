@@ -19,7 +19,7 @@ const MapWrapper: FC<MapWrapperProps> = ({ children }): JSX.Element => {
     <MapContainer
       center={[32.4207423, 53.6830157]}
       zoom={6}
-      style={{ height: "100vh" }}
+      className="w-full h-full"
     >
       {isDarkMode ? (
         <TileLayer url="https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png" />

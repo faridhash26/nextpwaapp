@@ -32,11 +32,13 @@ const AdminLayout: FC<AdminLayoutProps> = ({ children }) => {
     >
       <SideBar isSideOpen={isSideOpen} setisSideOpen={setisSideOpen} />
       <div className="flex flex-col w-full h-full">
-        <Header
-          isInfoSideOpen={isInfoSideOpen}
-          setisInfoSideOpen={setisInfoSideOpen}
-        />
-        {children}
+        <div className="w-full h-[6%]">
+          <Header
+            isInfoSideOpen={isInfoSideOpen}
+            setisInfoSideOpen={setisInfoSideOpen}
+          />
+        </div>
+        <div className="w-full h-[94%]">{children}</div>
       </div>
       <SideBarInfo
         isInfoSideOpen={isInfoSideOpen}
